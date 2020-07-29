@@ -1,0 +1,23 @@
+{
+  "name": "frontend-assignment",
+  "author": {
+    "name": "Walter Barbagallo",
+    "email": "walter.barbagallo@satispay.com"
+  },
+  "contributors": [
+    {
+      "name": "Alessio Dionisi",
+      "email": "alessio.dionisi@satispay.com"
+    }
+  ],
+  "scripts": {
+    "start:client": "yarn workspace @frontend-assignment/client start",
+    "start:server": "yarn workspace @frontend-assignment/server start",
+    "cy:o": "yarn workspace @frontend-assignment/client cypress:open",
+    "cy:start": "yarn workspace @frontend-assignment/client cypress:run"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "private": true
+}
