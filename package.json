@@ -1,13 +1,29 @@
 {
-  "name": "frontend-assignment",
+  "name": "poketable",
+  "version": "1.0.0",
+  "private": true,
+  "description": "React webapp that display pokemons in a table",
+  "license": "MIT",
+  "homepage": "https://github.com/AndreaPontrandolfo/poketable",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndreaPontrandolfo/poketable.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AndreaPontrandolfo/poketable/issues"
+  },
   "author": {
-    "name": "Walter Barbagallo",
-    "email": "walter.barbagallo@satispay.com"
+    "name": "Andrea Pontrandolfo",
+    "email": "andrea.pontra@gmail.com"
   },
   "contributors": [
     {
       "name": "Alessio Dionisi",
       "email": "alessio.dionisi@satispay.com"
+    },
+    {
+      "name": "Walter Barbagallo",
+      "email": "walter.barbagallo@satispay.com"
     }
   ],
   "scripts": {
@@ -18,6 +34,5 @@
   },
   "workspaces": [
     "packages/*"
-  ],
-  "private": true
+  ]
 }

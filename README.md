@@ -1,68 +1,87 @@
-# Assignment for Frontend Position
+<h1 align="center">Welcome to poketable 👋</h1>
+<p>
+  <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
+  <a href="https://github.com/AndreaPontrandolfo/poketable#readme" target="_blank">
+    <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
+  </a>
+  <a href="https://github.com/AndreaPontrandolfo/poketable/graphs/commit-activity" target="_blank">
+    <img alt="Maintenance" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" />
+  </a>
+  <a href="https://github.com/AndreaPontrandolfo/poketable/blob/master/LICENSE" target="_blank">
+    <img alt="License: MIT" src="https://img.shields.io/github/license/AndreaPontrandolfo/poketable" />
+  </a>
+</p>
 
-In Satispay one of the main task for a frontend developer is to build useful interfaces in order to display, search and interact with data.
+> React webapp that display pokemons in a table
 
-The target of this UI are other Satispay colleagues through internal dashboard/consoles.
+### 🏠 [Homepage](https://github.com/AndreaPontrandolfo/poketable)
 
-It is not important to have a beautiful UI in terms of design, but we need to have a consistent and working interface allowing the users to work with data without frictions.
+### ✨ [Demo](wip)
 
-## Introduction
+## Install
 
-For this assignment what you will build is a simple page (and a server app) for querying and filtering a dataset of Pokémons.  
-The Pokèmons dataset is harcoded inside the project.
+```sh
+yarn install
+```
 
-The server app will be powered by Node.js, `typescript` and [`apollo-server`](https://www.apollographql.com/docs/apollo-server/) and it is partially implemented.  
-The client app will be powered by `typescript`, `react`, [`apollo-client`](https://www.apollographql.com/docs/react/) and [`antd`](https://ant.design/) and you will build it from scratch.
+## Usage
 
-You can add other libraries if needed; if you are not confident with some of this libraries you can pick alternatives.  
-For the client side app we recommend to use `webpack`.
+### Start the client dev server
 
-This project is powered by `yarn` and workspaces.  
-Once cloned this project can be installed with `yarn install`.  
-You can run scripts on client with `yarn workspace @frontend-assignment/client <command>`, and on server with `yarn workspace @frontend-assignment/server <command>`.  
-For the server you can start the the app with `yarn workspace @frontend-assignment/server start`.
+```sh
+yarn start:client
+```
 
-## Tasks
+### Start the backend dev server
 
-### Server side
+```sh
+yarn start:server
+```
 
-The server schema follows the [relay](https://facebook.github.io/relay/graphql/connections.htm) standard for connection, simplified.
+## Run tests
 
-Implement `pokemonsByType` query: it accepts a `type: String` parameter and return a connection of Pokèmons.  
-If you feel confident you can add pagination parameters `after: String` and `limit: Int`.
+```sh
+cy:o
+```
 
-### Client side
+## Features
 
-Use components in `antd` library to create a page with this capabilities:
+* Fullstack SPA
+* Filtering
+* Searching
+* Written entirely with the Functional Programming paradigm in mind
+* Type-safety with typescript
+* Full suit of e2e tests
 
-- possibility to search Pokémons by name
-- possibility to filter Pokémons by type
-- display Pokémons search result in a table with columns:
-  - name
-  - type
-  - classification
-- if `hasNextPage` is true add the possibility to load more results.
+## Tech Stack
 
-## Submission
+* Create-react-app
+* React w/Hooks
+* Graphql
+* Apollo
+* Cypress
+* Ramda
+* Typescript
+* Styled components
 
-You can submit your work through:
+## Author
 
-- [GitHub](https://github.com)
-- [CodeSandbox](https://codesandbox.io)
-- [Glitch](https://glitch.com)
-- ...other
+👤 **Andrea Pontrandolfo**
 
-The code must be available to us in order to evaluate your submission.
+* Github: [@AndreaPontrandolfo](https://github.com/AndreaPontrandolfo)
 
-## **Evaluation**
+## 🤝 Contributing
 
-Our goal is to find answers to those questions:
+Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/AndreaPontrandolfo/poketable/issues). You can also take a look at the [contributing guide](https://github.com/AndreaPontrandolfo/poketable/blob/master/CONTRIBUTING.md).
 
-- Do you understand the TypeScript language and more in general web technologies?
-- Can you design interfaces that are clear and easy to use?
-- Do you master your working environment?
+## Show your support
 
-Due to the limited time consider the followings:
+Give a ⭐️ if this project helped you!
 
-- It is NOT important to have a fully functional application at the end.
-- We'll develop just for the latest version of Google Chrome.
+## 📝 License
+
+Copyright © 2020 [Andrea Pontrandolfo](https://github.com/AndreaPontrandolfo).<br />
+This project is [MIT](https://github.com/AndreaPontrandolfo/poketable/blob/master/LICENSE) licensed.
+
+***
+_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
