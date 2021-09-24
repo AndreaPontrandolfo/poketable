@@ -1,0 +1,38 @@
+{
+  "name": "poketable",
+  "version": "1.0.0",
+  "private": true,
+  "description": "React webapp that display pokemons in a table",
+  "license": "MIT",
+  "homepage": "https://github.com/AndreaPontrandolfo/poketable",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndreaPontrandolfo/poketable.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AndreaPontrandolfo/poketable/issues"
+  },
+  "author": {
+    "name": "Andrea Pontrandolfo",
+    "email": "andrea.pontra@gmail.com"
+  },
+  "contributors": [
+    {
+      "name": "Alessio Dionisi",
+      "email": "alessio.dionisi@satispay.com"
+    },
+    {
+      "name": "Walter Barbagallo",
+      "email": "walter.barbagallo@satispay.com"
+    }
+  ],
+  "scripts": {
+    "start:client": "yarn workspace @frontend-assignment/client start",
+    "start:server": "yarn workspace @frontend-assignment/server start",
+    "cy:o": "yarn workspace @frontend-assignment/client cypress:open",
+    "cy:start": "yarn workspace @frontend-assignment/client cypress:run"
+  },
+  "workspaces": [
+    "packages/*"
+  ]
+}
